@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/responsive.css"> -->
     <title>Ruhul Amin Rokon Portfoloi</title>
   </head>
   <body>
@@ -57,16 +58,20 @@
                     <p><strong>Solution</strong></p>
                   </div>
                 </div>
+                <!-- navigation bar -->
                 <div class="navbar">
                   <nav>
                     <ul>
                       <li><a href="#">Home</a></li>
                       <li><a href="#about-sec">About</a></li>
                       <li><a href="#works">Works</a></li>
-                      <li><a href="#">Service</a></li>
+                      <li><a href="#service">Service</a></li>
                       <li><a href="#contact">Contact</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li id="download"><a href="#">Download CV</a></li>
+                      <li id="download">
+                        <a href="./rsc/pdf/SampleResumes.pdf" target="_blank"
+                          >Download CV</a
+                        >
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -94,11 +99,12 @@
                   </div>
                   <div id="button">
                     <div id="arrow">
-                      <i class="fa-solid fa-angles-right"></i>
+                      <a href="#contact"><i class="fa-solid fa-angles-right"></i></a>
                     </div>
-                    <a href="#contact">Hire Me</a>
+                    Hire Me
                   </div>
                 </div>
+                <!-- Bubble animation -->
                 <div class="photo">
                   <div class="steam" id="steam1"></div>
                   <div class="steam" id="steam2"></div>
@@ -111,6 +117,7 @@
           </div>
         </div>
       </header>
+      <!-- Abour me section -->
       <div class="container">
         <section id="about-sec">
           <div class="about-me">
@@ -204,10 +211,11 @@
           </div>
         </div>
       </div>
+      <!-- My project section -->
       <section id="works">
         <div class="port-title">
           <h2>Portfolio</h2>
-          <h1>My works</h1>
+          <h1>My Project</h1>
         </div>
         <div class="my-work-grid">
           <div class="work-item">
@@ -242,6 +250,186 @@
           </div>
         </div>
       </section>
+      <!-- My service section -->
+      <section id="service">
+        <div class="port-title">
+          <h2>Services</h2>
+          <h1>What I do</h1>
+        </div>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="ser-img">
+              <img src="./rsc/service-icon1.png" alt="" />
+            </div>
+            <div class="service-para">
+              <h1>Web Development</h1>
+              <p>
+                Web development, also known as website development, refers to
+                the tasks associated with creating, building, and maintaining
+                websites and web applications that run online on a browser. It
+                may, however, also include web design, web programming, and
+                database management.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="ser-img">
+              <img src="./rsc/service-icon2.png" alt="" />
+            </div>
+            <div class="service-para">
+              <h1>Software Development</h1>
+              <p>
+                Software development is the process of creating, testing,
+                maintaining, and designing software applications. It involves
+                using techniques and principles from computer science,
+                engineering, and mathematical analysis. The goal of software
+                development is to create software that is reliable, efficient,
+                and easy to use.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="ser-img">
+              <img src="./rsc/service-icon3.png" alt="" />
+            </div>
+            <div class="service-para">
+              <h1>System Development</h1>
+              <p>
+                System development is the process of creating, designing,
+                testing, and implementing a new software application or program.
+                It's a problem-solving process that involves using knowledge to
+                create new knowledge and define a solution.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="ser-img">
+              <img src="./rsc/service-icon4.png" alt="" />
+            </div>
+            <div class="service-para">
+              <h1>Security Analysis</h1>
+              <p>
+                Security analysis is the process of evaluating the financial
+                health and potential risks of an investment, such as a stock or
+                bond. The goal is to determine if an asset is fairly valued,
+                underpriced, or overpriced, so that investors can make informed
+                decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Area -->
+      <section id="contact">
+        <h1>Let's go forward</h1>
+        <div id="contact-grid">
+          <div class="contact-item">
+            <div class="sub-con-item">
+              <div class="fa-item">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="adress-item">
+                <h2>Address</h2>
+                <p>
+                  Konabari <br />
+                  Gazipur, Dhaka
+                </p>
+              </div>
+            </div>
+            <div class="sub-con-item">
+              <div class="fa-item">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="adress-item">
+                <h2>Phone</h2>
+                <p>+8801621661944</p>
+              </div>
+            </div>
+            <div class="sub-con-item">
+              <div class="fa-item"><i class="fa-solid fa-envelope"></i></div>
+              <div class="adress-item">
+                <h2>Email</h2>
+                <p>rarokon@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <form id="contact-form" class="cont-form">
+              <div class="form-group">
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="YOUR NAME"
+                    name="name"
+                    value=""
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="YOUR EMAIL"
+                    name="email"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="YOUR PHONE"
+                    name="phone"
+                    value=""
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="YOUR SUBJECT"
+                    name="subject"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <textarea
+                class="form-control"
+                rows="10"
+                placeholder="MESSAGE"
+                name="message"
+                required
+              ></textarea>
+              <br />
+
+              <button
+                class="btn btn-primary send-button"
+                id="submit"
+                type="submit"
+                value="SEND"
+              >
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i
+                  ><span class="send-text">SEND</span>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <footer id="footer">
         <div id="footer-container">
           <div>
@@ -262,6 +450,7 @@
             <div class="form">
               <form action="">
                 <input
+                  class="footer-email"
                   type="email"
                   placeholder="Enter your email address"
                   required
@@ -276,10 +465,11 @@
               <li><a href="#">Home</a></li>
               <li><a href="#about-sec">About</a></li>
               <li><a href="#works">Works</a></li>
-              <li><a href="#">Service</a></li>
+              <li><a href="#service">Service</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#">Blog</a></li>
-              <li id="download"><a href="#">Download CV</a></li>
+              <li>
+                <a href="./rsc/pdf/SampleResumes.pdf" target="_blank">Download CV</a>
+              </li>
             </ul>
           </div>
         </div>
