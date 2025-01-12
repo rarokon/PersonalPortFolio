@@ -1,46 +1,23 @@
 # Personal Port Folio
 
-## Table of Contents
+Project: Personal Portfolio Website
+Assignment 
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
 
-## About <a name = "about"></a>
+1. HTML Structure:
 
-Write about 1-2 paragraphs describing the purpose of your project.
+○ A header section with a navigation bar.
+○ A hero section with a title, description, and call-to-action button.
+○ An "About Me" section with an image and text.
+○ A "Projects" section showcasing at least three projects using a grid or flexbox layout.
+○ A "Contact Me" section with a form.
 
-## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+2. CSS Styling:
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
+○ Use proper margin and padding to create spacing.
+○ Style the page with background-color and color to make it visually appealing.
+○ Implement a responsive design using flexbox or CSS grid.
+○ Add at least one CSS animation and one CSS transition.
+○ Use pseudo-classes (like :hover, :focus) and pseudo-elements (like ::before, ::after) creatively.
+○ Include transformations like scaling or rotating an element.
