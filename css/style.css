@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton+SC&family=Chela+One&family=Chewy&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Galada&family=Indie+Flower&family=Lemon&family=Mr+De+Haviland&family=Noto+Serif+Bengali:wght@100..900&family=Permanent+Marker&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&family=Ranchers&family=Shadows+Into+Light&family=Tiro+Bangla:ital@0;1&family=Walter+Turncoat&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton+SC&family=Chela+One&family=Chewy&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fredericka+the+Great&family=Galada&family=Indie+Flower&family=Lemon&family=Mr+De+Haviland&family=Noto+Serif+Bengali:wght@100..900&family=Permanent+Marker&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&family=Ranchers&family=Shadows+Into+Light&family=Tiro+Bangla:ital@0;1&family=Walter+Turncoat&family=Yatra+One&display=swap');
 
 * {
   margin: 0;
@@ -38,9 +38,7 @@
   background: radial-gradient(closest-side, #3f87a6, red, rgb(252, 161, 161));
 }
 
-
 /* Mouse hover */
-
 
 #facebook:hover {
   background: radial-gradient(closest-side, #3f87a6, #022867, #0866ff);
@@ -51,25 +49,25 @@
 }
 
 #youtube:hover {
-  background: radial-gradient(closest-side, #3f87a6,rgb(252, 161, 161),red);
+  background: radial-gradient(closest-side, #3f87a6, rgb(252, 161, 161), red);
 }
 
 /*=====  End of Social media links  ======*/
 
-#go-to-top{    
+#go-to-top {
   position: fixed;
   border-radius: 6px;
-  bottom: 10%;
-  right: 5%;
+  bottom: 5%;
+  right: 3%;
   height: 60px;
   width: 60px;
   background-color: cornflowerblue;
   text-align: center;
   padding-top: 10px;
-  opacity: .6;    
+  opacity: .6;
 }
 
-#go-to-top:hover{ 
+#go-to-top:hover {
   opacity: 1;
 }
 
@@ -77,16 +75,87 @@
   width: 100%;
 }
 
-#header-container {
+.header-container {
   background: linear-gradient(to right, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%,
       #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
   color: gainsboro;
 }
 
-#header-hero {
+.container {
   width: 80%;
   margin: auto;
 }
+
+#header-hero {
+  padding-left: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+/* Seventh Button */
+
+#button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  /* margin: 20px 20px 20px 20px; */
+  margin-top: 20px;
+  color: #faf8a4;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+#button>a {
+  position: relative;
+  left: 0;
+  transition: all .35s ease-Out;
+}
+
+#arrow {
+  width: 100%;
+  height: 100%;
+  background: #BFC0C0;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button img {
+  width: 20px;
+  height: auto;
+}
+
+#button:hover #arrow {
+  left: 0;
+}
+
+#button:hover a {
+  left: 150px;
+}
+
+/* @media screen and (min-width:1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  #container {
+    width: 50%;
+  }
+} */
 
 #buble-1 {
   background: rgba(255, 255, 255, 0.01);
@@ -216,10 +285,10 @@ a {
 #download {
   background-color: #595959;
   padding-top: 3px;
-  color: aliceblue;
+  color: bisque;
   text-align: center;
   height: 4vh;
-  width: 16vh;
+  width: 17vh;
   background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
   border-radius: 20px;
 }
@@ -229,18 +298,20 @@ a {
 .hero-container {
   display: flex;
 }
-.hero-text{
+
+.hero-text {
   width: 50%;
 }
+
 .title {
   margin-top: 5%;
 }
 
 .title>h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   text-transform: uppercase;
   text-transform: uppercase;
-  background-image: linear-gradient(-225deg,
+  background-image: linear-gradient(90deg,
       #b8b8b8 0%,
       #dec4f9 29%,
       #b8e2fa 67%,
@@ -250,11 +321,15 @@ a {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
+
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @keyframes textclip {
@@ -279,6 +354,7 @@ a {
 .photo>img {
   max-width: 100%;
   height: auto;
+  padding-right: 10px;
 }
 
 .photo>div {
@@ -376,7 +452,7 @@ a {
 
 .slider-wrapper {
   font-size: 2vw;
-  color: #aaa;
+  color: #dddddd;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -386,7 +462,8 @@ a {
 .slider {
   height: 50px;
   padding-left: 15px;
-  overflow: hidden; /* One of the importing things for slide effect */
+  overflow: hidden;
+  /* One of the importing things for slide effect */
 }
 
 .slider div {
@@ -415,24 +492,30 @@ a {
   0% {
     margin-top: -300px;
   }
+
   5% {
     /* For stopping effect */
     margin-top: -200px;
   }
+
   33% {
     margin-top: -200px;
   }
+
   38% {
     /* For stopping effect */
     margin-top: -100px;
   }
+
   66% {
     margin-top: -100px;
   }
+
   71% {
     /* For stopping effect */
     margin-top: 0px;
   }
+
   100% {
     margin-top: 0px;
   }
@@ -442,14 +525,111 @@ a {
 /*=============================================
 =            About me section            =
 =============================================*/
-.about-me{
+#about-sec {
+  margin-top: 40px;
+}
+
+.about-me {
   width: 100%;
   display: flex;
 }
-.img-slide{
+
+.img-slide {
   width: 50%;
 
 }
 
+.details-me {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.details-me>h2 {
+  font-size: 1.2vw;
+  color: coral;
+  letter-spacing: .4vw;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+}
+
+.details-me>h1 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: .1vw;
+  margin-bottom: 2vh;
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.details-me>p {
+  text-align: justify;
+
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+table {
+  width: 100%;
+  font-size: 2vh;
+  border-collapse: collapse;
+}
+
+td {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td:nth-child(odd) {
+  font-weight: bold;
+}
+
 /*=====  End of About me section  ======*/
 
+
+.achieve-container {
+  background: linear-gradient(to right, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%,
+      #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  color: gainsboro;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.grid-item {
+  display: flex;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item>div>h1 {
+  color: coral;
+  font-size: 4vw;
+}
+
+.grid-item>div>h2 {
+  color: aliceblue;
+  font-size: 1.5vw;
+  padding: 1.5vh 0 0 2vh;
+  text-transform: uppercase;
+}
